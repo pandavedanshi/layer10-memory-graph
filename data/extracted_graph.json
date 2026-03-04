@@ -1,0 +1,1609 @@
+[
+    {
+        "source_id": "https://github.com/fastapi/fastapi/pull/14942",
+        "graph_data": {
+            "entities": [
+                {
+                    "name": "openapi schema",
+                    "type": "Feature",
+                    "evidence": "generate openapi schema"
+                },
+                {
+                    "name": "annotated metadata loss",
+                    "type": "Bug",
+                    "evidence": "we lose the info (meta) from annotated"
+                },
+                {
+                    "name": "Annotated",
+                    "type": "Technology",
+                    "evidence": "annotated"
+                },
+                {
+                    "name": "lenient_issubclass",
+                    "type": "Technology",
+                    "evidence": "now using the lenient_issubclass"
+                },
+                {
+                    "name": "Basemodel",
+                    "type": "Technology",
+                    "evidence": "basemodel are gonna be flatted"
+                },
+                {
+                    "name": "Enums",
+                    "type": "Technology",
+                    "evidence": "enums (currency from iso4217) are correctly handled"
+                },
+                {
+                    "name": "iso4217",
+                    "type": "Technology",
+                    "evidence": "currency from iso4217"
+                },
+                {
+                    "name": "WithJsonSchema",
+                    "type": "Feature",
+                    "evidence": "WithJsonSchema should be respected"
+                },
+                {
+                    "name": "Pydantic",
+                    "type": "Technology",
+                    "evidence": "pydantic.json_schema.WithJsonSchema"
+                },
+                {
+                    "name": "__get_pydantic_json_schema__",
+                    "type": "Technology",
+                    "evidence": "declare correctly the __get_pydantic_json_schema__"
+                }
+            ],
+            "relationships": [
+                {
+                    "source": "annotated metadata loss",
+                    "target": "openapi schema",
+                    "relationship": "affects",
+                    "evidence": "when we try to generate openapi schema we lose the info (meta) from annotated"
+                },
+                {
+                    "source": "lenient_issubclass",
+                    "target": "Basemodel",
+                    "relationship": "flattens",
+                    "evidence": "now using the lenient_issubclass just basemodel are gonna be flatted"
+                },
+                {
+                    "source": "WithJsonSchema",
+                    "target": "Pydantic",
+                    "relationship": "belongs_to",
+                    "evidence": "pydantic.json_schema.WithJsonSchema"
+                },
+                {
+                    "source": "Enums",
+                    "target": "iso4217",
+                    "relationship": "implements",
+                    "evidence": "enums (currency from iso4217)"
+                },
+                {
+                    "source": "WithJsonSchema",
+                    "target": "openapi schema",
+                    "relationship": "influences",
+                    "evidence": "I think that WithJsonSchema should be respected"
+                }
+            ]
+        }
+    },
+    {
+        "source_id": "https://github.com/fastapi/fastapi/pull/14829",
+        "graph_data": {
+            "entities": [
+                {
+                    "id": "PR_14829",
+                    "type": "Feature",
+                    "name": "Add tests for nullable parameters and defaults",
+                    "evidence": "Title: \u2705 Add tests for nullable parameters and defaults"
+                },
+                {
+                    "id": "FastAPI",
+                    "type": "Technology",
+                    "name": "FastAPI",
+                    "evidence": "raises AttributeError as FastAPI attempts to use it as file object"
+                },
+                {
+                    "id": "Pydantic",
+                    "type": "Technology",
+                    "name": "Pydantic",
+                    "evidence": "parameters declared as Pydantic model"
+                },
+                {
+                    "id": "OpenAPI",
+                    "type": "Technology",
+                    "name": "OpenAPI",
+                    "evidence": "openapi schema"
+                },
+                {
+                    "id": "Bug_Behavior_Mismatch",
+                    "type": "Bug",
+                    "name": "Behavior mismatch between Pydantic models and non-model parameters",
+                    "evidence": "parameters declared as Pydantic model behave different from non-model parameters (different behavior and error messages)"
+                },
+                {
+                    "id": "Bug_Schema_Missing_None",
+                    "type": "Bug",
+                    "name": "None default value not reflected in schema",
+                    "evidence": "if the default value is None, it's not reflected in schema"
+                },
+                {
+                    "id": "Bug_File_AttributeError",
+                    "type": "Bug",
+                    "name": "File parameter AttributeError with default value",
+                    "evidence": "It\u2019s possible to specify default value for bytes File parameter, but it doesn\u2019t work (raises AttributeError as FastAPI attempts to use it as file object)"
+                },
+                {
+                    "id": "Query_Param",
+                    "type": "Technology",
+                    "name": "Query Parameter",
+                    "evidence": "Tests for each type of parameter (Query, Form, Body, etc..)"
+                },
+                {
+                    "id": "Form_Param",
+                    "type": "Technology",
+                    "name": "Form Parameter",
+                    "evidence": "empty strings are not replaced by None for Form parameters declared as Pydantic model"
+                },
+                {
+                    "id": "Body_Param",
+                    "type": "Technology",
+                    "name": "Body Parameter",
+                    "evidence": "null values are treated as missing value for non-Model Body parameters"
+                },
+                {
+                    "id": "Header_Param",
+                    "type": "Technology",
+                    "name": "Header Parameter",
+                    "evidence": "for Header parameters declared as Pydantic model, field names use underscore instead of hyphens in error response"
+                },
+                {
+                    "id": "BeforeValidator",
+                    "type": "Technology",
+                    "name": "BeforeValidator",
+                    "evidence": "Data passed to field validator is as expected (checked using BeforeValidator)"
+                }
+            ],
+            "relationships": [
+                {
+                    "source": "PR_14829",
+                    "target": "Bug_Behavior_Mismatch",
+                    "type": "addresses",
+                    "evidence": "This PR is intended to expose these issues for different types of parameters."
+                },
+                {
+                    "source": "PR_14829",
+                    "target": "Bug_Schema_Missing_None",
+                    "type": "addresses",
+                    "evidence": "This PR is intended to expose these issues for different types of parameters."
+                },
+                {
+                    "source": "PR_14829",
+                    "target": "Bug_File_AttributeError",
+                    "type": "addresses",
+                    "evidence": "This PR is intended to expose these issues for different types of parameters."
+                },
+                {
+                    "source": "Bug_Behavior_Mismatch",
+                    "target": "Pydantic",
+                    "type": "affects",
+                    "evidence": "parameters declared as Pydantic model behave different from non-model parameters"
+                },
+                {
+                    "source": "Bug_File_AttributeError",
+                    "target": "FastAPI",
+                    "type": "occurs_in",
+                    "evidence": "raises AttributeError as FastAPI attempts to use it as file object"
+                },
+                {
+                    "source": "PR_14829",
+                    "target": "BeforeValidator",
+                    "type": "uses",
+                    "evidence": "Data passed to field validator is as expected (checked using BeforeValidator)"
+                },
+                {
+                    "source": "PR_14829",
+                    "target": "OpenAPI",
+                    "type": "validates",
+                    "evidence": "Test: openapi schema"
+                },
+                {
+                    "source": "PR_14829",
+                    "target": "FastAPI",
+                    "type": "contributes_to",
+                    "evidence": "Source ID: https://github.com/fastapi/fastapi/pull/14829"
+                }
+            ]
+        }
+    },
+    {
+        "source_id": "https://github.com/fastapi/fastapi/pull/15008",
+        "graph_data": {
+            "entities": [
+                {
+                    "name": "FastAPI",
+                    "type": "Technology",
+                    "evidence": "FastAPI"
+                },
+                {
+                    "name": "FastAPI VS Code extension",
+                    "type": "Technology",
+                    "evidence": "FastAPI VS Code extension"
+                },
+                {
+                    "name": "Documentation",
+                    "type": "Feature",
+                    "evidence": "Add documentation"
+                }
+            ],
+            "relationships": [
+                {
+                    "subject": "FastAPI VS Code extension",
+                    "predicate": "targets",
+                    "object": "FastAPI",
+                    "evidence": "FastAPI VS Code extension"
+                },
+                {
+                    "subject": "Documentation",
+                    "predicate": "describes",
+                    "object": "FastAPI VS Code extension",
+                    "evidence": "Add documentation for the FastAPI VS Code extension"
+                }
+            ]
+        }
+    },
+    {
+        "source_id": "https://github.com/fastapi/fastapi/pull/12481",
+        "graph_data": {
+            "entities": [
+                {
+                    "name": "Pydantic models",
+                    "type": "Technology",
+                    "evidence": "Pydantic models are supported for query, cookie and header parameters."
+                },
+                {
+                    "name": "OpenAPI spec",
+                    "type": "Technology",
+                    "evidence": "the model is flattened in the OpenAPI spec"
+                },
+                {
+                    "name": "Query",
+                    "type": "Feature",
+                    "evidence": "parameters using Query, Cookie and Header"
+                },
+                {
+                    "name": "Cookie",
+                    "type": "Feature",
+                    "evidence": "parameters using Query, Cookie and Header"
+                },
+                {
+                    "name": "Header",
+                    "type": "Feature",
+                    "evidence": "parameters using Query, Cookie and Header"
+                },
+                {
+                    "name": "Support for mixed and multiple Pydantic models",
+                    "type": "Feature",
+                    "evidence": "Support for mixed and multiple Pydantic models for parameters using Query, Cookie and Header"
+                },
+                {
+                    "name": "#12199",
+                    "type": "Issue",
+                    "evidence": "From #12199 onwards"
+                }
+            ],
+            "relationships": [
+                {
+                    "source": "Support for mixed and multiple Pydantic models",
+                    "target": "Pydantic models",
+                    "relationship": "implements support for",
+                    "evidence": "Support for mixed and multiple Pydantic models for parameters"
+                },
+                {
+                    "source": "Pydantic models",
+                    "target": "Query",
+                    "relationship": "supported as parameters for",
+                    "evidence": "Pydantic models are supported for query, cookie and header parameters."
+                },
+                {
+                    "source": "Pydantic models",
+                    "target": "Cookie",
+                    "relationship": "supported as parameters for",
+                    "evidence": "Pydantic models are supported for query, cookie and header parameters."
+                },
+                {
+                    "source": "Pydantic models",
+                    "target": "Header",
+                    "relationship": "supported as parameters for",
+                    "evidence": "Pydantic models are supported for query, cookie and header parameters."
+                },
+                {
+                    "source": "Pydantic models",
+                    "target": "OpenAPI spec",
+                    "relationship": "flattened in",
+                    "evidence": "the model is flattened in the OpenAPI spec"
+                },
+                {
+                    "source": "Support for mixed and multiple Pydantic models",
+                    "target": "#12199",
+                    "relationship": "addresses behavior introduced in",
+                    "evidence": "From #12199 onwards, Pydantic models are supported... but when multiple are defined, they aren't."
+                }
+            ]
+        }
+    },
+    {
+        "source_id": "https://github.com/fastapi/fastapi/pull/14948",
+        "graph_data": {
+            "entities": [
+                {
+                    "name": "werkzeug",
+                    "type": "Technology",
+                    "evidence": "Bumps [werkzeug](https://github.com/pallets/werkzeug) from 3.1.5 to 3.1.6."
+                },
+                {
+                    "name": "fastapi",
+                    "type": "Technology",
+                    "evidence": "Source ID: https://github.com/fastapi/fastapi/pull/14948"
+                },
+                {
+                    "name": "dependabot",
+                    "type": "Developer",
+                    "evidence": "You can trigger Dependabot actions by commenting on this PR"
+                },
+                {
+                    "name": "GHSA-29vq-49wr-vm6x",
+                    "type": "Bug",
+                    "evidence": "fixes a security issue but does not otherwise change behavior... GHSA-29vq-49wr-vm6x"
+                },
+                {
+                    "name": "uv",
+                    "type": "Technology",
+                    "evidence": "package-manager=uv"
+                },
+                {
+                    "name": "safe_join",
+                    "type": "Feature",
+                    "evidence": "safe_join on Windows does not allow special devices names in multi-segment paths."
+                }
+            ],
+            "relationships": [
+                {
+                    "source": "dependabot",
+                    "relation": "updates",
+                    "target": "werkzeug",
+                    "evidence": "Bumps [werkzeug](https://github.com/pallets/werkzeug) from 3.1.5 to 3.1.6."
+                },
+                {
+                    "source": "werkzeug",
+                    "relation": "fixes",
+                    "target": "GHSA-29vq-49wr-vm6x",
+                    "evidence": "This is the Werkzeug 3.1.6 security fix release, which fixes a security issue"
+                },
+                {
+                    "source": "GHSA-29vq-49wr-vm6x",
+                    "relation": "affects",
+                    "target": "safe_join",
+                    "evidence": "safe_join on Windows does not allow special devices names in multi-segment paths. GHSA-29vq-49wr-vm6x"
+                },
+                {
+                    "source": "uv",
+                    "relation": "manages_dependencies_for",
+                    "target": "fastapi",
+                    "evidence": "package-manager=uv"
+                }
+            ]
+        }
+    },
+    {
+        "source_id": "https://github.com/fastapi/fastapi/pull/15043",
+        "graph_data": {
+            "entities": [
+                {
+                    "name": "route level middleware",
+                    "type": "Feature",
+                    "evidence": "Feature/route level middleware"
+                },
+                {
+                    "name": "fastapi",
+                    "type": "Technology",
+                    "evidence": "https://github.com/fastapi/fastapi/pull/15043"
+                }
+            ],
+            "relationships": [
+                {
+                    "subject": "route level middleware",
+                    "predicate": "proposed for",
+                    "object": "fastapi",
+                    "evidence": "https://github.com/fastapi/fastapi/pull/15043"
+                }
+            ]
+        }
+    },
+    {
+        "source_id": "https://github.com/fastapi/fastapi/pull/15040",
+        "graph_data": {
+            "entities": [
+                {
+                    "name": "FastAPI",
+                    "type": "Technology",
+                    "evidence": "FastAPI already leverages return type annotations for response models."
+                },
+                {
+                    "name": "OpenAPI",
+                    "type": "Technology",
+                    "evidence": "reflecting Response subclasses declared in return type annotations in OpenAPI documentation."
+                },
+                {
+                    "name": "Pydantic",
+                    "type": "Technology",
+                    "evidence": "They are excluded from Pydantic model field creation and instead used exclusively for OpenAPI documentation."
+                },
+                {
+                    "name": "JSONL",
+                    "type": "Technology",
+                    "evidence": "This becomes even more problematic when considering streaming responses, including JSONL and SSE support"
+                },
+                {
+                    "name": "SSE",
+                    "type": "Technology",
+                    "evidence": "This becomes even more problematic when considering streaming responses, including JSONL and SSE support"
+                },
+                {
+                    "name": "Model inference errors",
+                    "type": "Bug",
+                    "evidence": "unions of Response subclasses have historically led to model inference errors unless response_model=None was explicitly set"
+                },
+                {
+                    "name": "PR 15040",
+                    "type": "Feature",
+                    "evidence": "This PR aims to address those inconsistencies while preserving FastAPI\u2019s runtime design principles."
+                },
+                {
+                    "name": "Mixed unions",
+                    "type": "Feature",
+                    "evidence": "Mixed unions combining Response subclasses with Pydantic models or primitive types."
+                },
+                {
+                    "name": "Response subclasses in return annotations",
+                    "type": "Feature",
+                    "evidence": "Response subclasses found in return annotations are extracted before response model inference."
+                }
+            ],
+            "relationships": [
+                {
+                    "source": "PR 15040",
+                    "relationship": "resolves",
+                    "target": "Model inference errors",
+                    "evidence": "Unions of Response subclasses no longer raise model inference errors, and explicit response_model=None is no longer required in those scenarios."
+                },
+                {
+                    "source": "PR 15040",
+                    "relationship": "implements",
+                    "target": "Response subclasses in return annotations",
+                    "evidence": "Response subclasses found in return annotations are extracted before response model inference. They are excluded from Pydantic model field creation and instead used exclusively for OpenAPI documentation."
+                },
+                {
+                    "source": "PR 15040",
+                    "relationship": "targets",
+                    "target": "FastAPI",
+                    "evidence": "I refined the original idea to better align with FastAPI\u2019s design principles."
+                },
+                {
+                    "source": "FastAPI",
+                    "relationship": "uses",
+                    "target": "Pydantic",
+                    "evidence": "They are excluded from Pydantic model field creation and instead used exclusively for OpenAPI documentation."
+                },
+                {
+                    "source": "PR 15040",
+                    "relationship": "updates",
+                    "target": "OpenAPI",
+                    "evidence": "The generated OpenAPI schema now reflects: Media types of Response subclasses declared in return annotations."
+                },
+                {
+                    "source": "PR 15040",
+                    "relationship": "supports",
+                    "target": "Mixed unions",
+                    "evidence": "The generated OpenAPI schema now reflects: ... Mixed unions combining Response subclasses with Pydantic models or primitive types."
+                }
+            ]
+        }
+    },
+    {
+        "source_id": "https://github.com/fastapi/fastapi/pull/13825",
+        "graph_data": {
+            "entities": [
+                {
+                    "id": "root_path",
+                    "type": "Feature",
+                    "evidence": "Fix docs UI asset paths to respect `root_path` in Custom Docs code example"
+                },
+                {
+                    "id": "Custom Docs code example",
+                    "type": "Feature",
+                    "evidence": "Updates docs for https://fastapi.tiangolo.com/how-to/custom-docs-ui-assets/ with better examples for handling `root_path` setups."
+                },
+                {
+                    "id": "Swagger",
+                    "type": "Technology",
+                    "evidence": "self-hosting swagger/redoc assets"
+                },
+                {
+                    "id": "ReDoc",
+                    "type": "Technology",
+                    "evidence": "self-hosting swagger/redoc assets"
+                },
+                {
+                    "id": "Static Assets",
+                    "type": "Feature",
+                    "evidence": "validate static assets when `root_path` is used in conjunction with self-hosting swagger/redoc assets"
+                }
+            ],
+            "relationships": [
+                {
+                    "source": "root_path",
+                    "target": "Custom Docs code example",
+                    "relation": "influences_ui_asset_paths",
+                    "evidence": "Fix docs UI asset paths to respect `root_path` in Custom Docs code example"
+                },
+                {
+                    "source": "Static Assets",
+                    "target": "root_path",
+                    "relation": "validated_with",
+                    "evidence": "Updates tests to validate static assets when `root_path` is used"
+                },
+                {
+                    "source": "Static Assets",
+                    "target": "Swagger",
+                    "relation": "includes_assets_for",
+                    "evidence": "self-hosting swagger/redoc assets"
+                },
+                {
+                    "source": "Static Assets",
+                    "target": "ReDoc",
+                    "relation": "includes_assets_for",
+                    "evidence": "self-hosting swagger/redoc assets"
+                }
+            ]
+        }
+    },
+    {
+        "source_id": "https://github.com/fastapi/fastapi/pull/15026",
+        "graph_data": {
+            "entities": [
+                {
+                    "name": "Pull Request #15026",
+                    "type": "Feature",
+                    "evidence": "This PR adds additional edge-case test coverage for invalid response_model definitions"
+                },
+                {
+                    "name": "FastAPI",
+                    "type": "Technology",
+                    "evidence": "ensure consistent FastAPI Error behavior"
+                },
+                {
+                    "name": "response_model",
+                    "type": "Technology",
+                    "evidence": "invalid response_model definitions involving container and Optional types"
+                },
+                {
+                    "name": "Optional[NonPydanticModel]",
+                    "type": "Technology",
+                    "evidence": "Added cases: - Optional[NonPydanticModel]"
+                },
+                {
+                    "name": "Dict[str, NonPydanticModel]",
+                    "type": "Technology",
+                    "evidence": "Added cases: ... - Dict[str, NonPydanticModel]"
+                }
+            ],
+            "relationships": [
+                {
+                    "subject": "Pull Request #15026",
+                    "relation": "implements_test_coverage_for",
+                    "object": "response_model",
+                    "evidence": "This PR adds additional edge-case test coverage for invalid response_model definitions"
+                },
+                {
+                    "subject": "Pull Request #15026",
+                    "relation": "targets",
+                    "object": "FastAPI",
+                    "evidence": "ensure consistent FastAPI Error behavior"
+                },
+                {
+                    "subject": "Pull Request #15026",
+                    "relation": "includes_case",
+                    "object": "Optional[NonPydanticModel]",
+                    "evidence": "Added cases: - Optional[NonPydanticModel]"
+                },
+                {
+                    "subject": "Pull Request #15026",
+                    "relation": "includes_case",
+                    "object": "Dict[str, NonPydanticModel]",
+                    "evidence": "Added cases: ... - Dict[str, NonPydanticModel]"
+                },
+                {
+                    "subject": "response_model",
+                    "relation": "uses",
+                    "object": "FastAPI",
+                    "evidence": "ensure consistent FastAPI Error behavior for nested invalid models"
+                }
+            ]
+        }
+    },
+    {
+        "source_id": "https://github.com/fastapi/fastapi/pull/15035",
+        "graph_data": {
+            "entities": [
+                {
+                    "name": "pydantic-ai",
+                    "type": "Technology",
+                    "evidence": "Bumps [pydantic-ai](https://github.com/pydantic/pydantic-ai) from 1.62.0 to 1.63.0."
+                },
+                {
+                    "name": "majdalsado",
+                    "type": "Developer",
+                    "evidence": "Add Gemini 3.1 Pro Preview support by @majdalsado"
+                },
+                {
+                    "name": "DRXD1000",
+                    "type": "Developer",
+                    "evidence": "feat(gemini): Logprob Support by @DRXD1000"
+                },
+                {
+                    "name": "jerry-reevo",
+                    "type": "Developer",
+                    "evidence": "Add args_validator parameter to tools for pre-execution validation by @jerry-reevo"
+                },
+                {
+                    "name": "DouweM",
+                    "type": "Developer",
+                    "evidence": "Fix Temporal and DBOS MCP to use cached tools instead of fetching each time by @DouweM"
+                },
+                {
+                    "name": "DarthJuri",
+                    "type": "Developer",
+                    "evidence": "Updated Cohere content item typing to fix the incompatibility by @DarthJuri"
+                },
+                {
+                    "name": "vimota",
+                    "type": "Developer",
+                    "evidence": "Fix Anthropic model on Bedrock incorrectly being treated as supporting json schema output by @vimota"
+                },
+                {
+                    "name": "AtharvaJaiswal005",
+                    "type": "Developer",
+                    "evidence": "fix(pydantic-evals): gracefully handle custom TracerProviders without add_span_processor by @AtharvaJaiswal005"
+                },
+                {
+                    "name": "sksvineeth",
+                    "type": "Developer",
+                    "evidence": "fix: use non-greedy regex in strip_markdown_fences to stop at closing fence by @sksvineeth"
+                },
+                {
+                    "name": "yipstar",
+                    "type": "Developer",
+                    "evidence": "Set BuiltinToolCallPart.id for OpenAI Responses WebSearch/FileSearch by @yipstar"
+                },
+                {
+                    "name": "madanlalit",
+                    "type": "Developer",
+                    "evidence": "fix: Identify new messages by run_id instead of index by @madanlalit"
+                },
+                {
+                    "name": "Gemini 3.1 Pro",
+                    "type": "Technology",
+                    "evidence": "Add Gemini 3.1 Pro Preview support"
+                },
+                {
+                    "name": "Cohere",
+                    "type": "Technology",
+                    "evidence": "Updated Cohere content item typing to fix the incompatibility"
+                },
+                {
+                    "name": "Anthropic",
+                    "type": "Technology",
+                    "evidence": "Fix Anthropic model on Bedrock"
+                },
+                {
+                    "name": "pydantic-evals",
+                    "type": "Technology",
+                    "evidence": "fix(pydantic-evals): gracefully handle custom TracerProviders"
+                },
+                {
+                    "name": "OpenAI",
+                    "type": "Technology",
+                    "evidence": "Set BuiltinToolCallPart.id for OpenAI Responses"
+                }
+            ],
+            "relationships": [
+                {
+                    "subject": "majdalsado",
+                    "relation": "implemented_feature",
+                    "object": "Gemini 3.1 Pro Preview support",
+                    "evidence": "Add Gemini 3.1 Pro Preview support by @majdalsado"
+                },
+                {
+                    "subject": "DRXD1000",
+                    "relation": "implemented_feature",
+                    "object": "Logprob Support",
+                    "evidence": "feat(gemini): Logprob Support by @DRXD1000"
+                },
+                {
+                    "subject": "jerry-reevo",
+                    "relation": "implemented_feature",
+                    "object": "args_validator parameter",
+                    "evidence": "Add args_validator parameter to tools for pre-execution validation by @jerry-reevo"
+                },
+                {
+                    "subject": "DouweM",
+                    "relation": "fixed_bug",
+                    "object": "Temporal and DBOS MCP tool fetching issue",
+                    "evidence": "Fix Temporal and DBOS MCP to use cached tools instead of fetching each time by @DouweM"
+                },
+                {
+                    "subject": "DarthJuri",
+                    "relation": "fixed_bug",
+                    "object": "Cohere typing incompatibility",
+                    "evidence": "Updated Cohere content item typing to fix the incompatibility by @DarthJuri"
+                },
+                {
+                    "subject": "vimota",
+                    "relation": "fixed_bug",
+                    "object": "Anthropic Bedrock JSON schema output issue",
+                    "evidence": "Fix Anthropic model on Bedrock incorrectly being treated as supporting json schema output by @vimota"
+                },
+                {
+                    "subject": "AtharvaJaiswal005",
+                    "relation": "fixed_bug",
+                    "object": "TracerProviders compatibility issue",
+                    "evidence": "fix(pydantic-evals): gracefully handle custom TracerProviders without add_span_processor by @AtharvaJaiswal005"
+                },
+                {
+                    "subject": "sksvineeth",
+                    "relation": "fixed_bug",
+                    "object": "greedy markdown fence regex",
+                    "evidence": "fix: use non-greedy regex in strip_markdown_fences to stop at closing fence by @sksvineeth"
+                },
+                {
+                    "subject": "yipstar",
+                    "relation": "fixed_bug",
+                    "object": "OpenAI BuiltinToolCallPart.id missing",
+                    "evidence": "Set BuiltinToolCallPart.id for OpenAI Responses WebSearch/FileSearch by @yipstar"
+                },
+                {
+                    "subject": "madanlalit",
+                    "relation": "fixed_bug",
+                    "object": "message identification by index",
+                    "evidence": "fix: Identify new messages by run_id instead of index by @madanlalit"
+                },
+                {
+                    "subject": "pydantic-ai",
+                    "relation": "updated_to_version",
+                    "object": "v1.63.0",
+                    "evidence": "Bumps [pydantic-ai](https://github.com/pydantic/pydantic-ai) from 1.62.0 to 1.63.0."
+                }
+            ]
+        }
+    },
+    {
+        "source_id": "https://github.com/fastapi/fastapi/pull/15034",
+        "graph_data": {
+            "entities": [
+                {
+                    "name": "pytest-codspeed",
+                    "type": "Technology",
+                    "evidence": "Bumps [pytest-codspeed](https://github.com/CodSpeedHQ/pytest-codspeed) from 4.2.0 to 4.3.0."
+                },
+                {
+                    "name": "uv",
+                    "type": "Technology",
+                    "evidence": "Bump uv in CI from 0.5.20 to 0.9.5"
+                },
+                {
+                    "name": "python",
+                    "type": "Technology",
+                    "evidence": "Pin python in ci integration tests to prevent intermitent codspeed segfaults"
+                },
+                {
+                    "name": "edgarrmondragon",
+                    "type": "Developer",
+                    "evidence": "Bump uv in CI from 0.5.20 to 0.9.5 by @edgarrmondragon"
+                },
+                {
+                    "name": "adriencaccia",
+                    "type": "Developer",
+                    "evidence": "feat/improve local walltime by @adriencaccia"
+                },
+                {
+                    "name": "GuillaumeLagrange",
+                    "type": "Developer",
+                    "evidence": "feat: rename instrumentation to simulation by @GuillaumeLagrange"
+                },
+                {
+                    "name": "not-matthias",
+                    "type": "Developer",
+                    "evidence": "feat: add memory profiling support by @not-matthias"
+                },
+                {
+                    "name": "art049",
+                    "type": "Developer",
+                    "evidence": "feat: add .gitignore to .codspeed folder on creation by @art049"
+                },
+                {
+                    "name": "memory profiling",
+                    "type": "Feature",
+                    "evidence": "this release brings support for the memory instrument, which enables you to track memory usage"
+                },
+                {
+                    "name": "walltime crashes",
+                    "type": "Bug",
+                    "evidence": "Pin python to 3.14.2 in CI to prevent walltime crashes"
+                },
+                {
+                    "name": "OIDC token",
+                    "type": "Technology",
+                    "evidence": "Switch to OIDC token"
+                }
+            ],
+            "relationships": [
+                {
+                    "source": "edgarrmondragon",
+                    "target": "uv",
+                    "relationship": "updated",
+                    "evidence": "Bump uv in CI from 0.5.20 to 0.9.5 by @edgarrmondragon"
+                },
+                {
+                    "source": "not-matthias",
+                    "target": "memory profiling",
+                    "relationship": "implemented",
+                    "evidence": "feat: add memory profiling support by @not-matthias"
+                },
+                {
+                    "source": "GuillaumeLagrange",
+                    "target": "walltime crashes",
+                    "relationship": "fixed",
+                    "evidence": "Pin python to 3.14.2 in CI to prevent walltime crashes by @GuillaumeLagrange"
+                },
+                {
+                    "source": "art049",
+                    "target": "pytest-codspeed",
+                    "relationship": "contributed to",
+                    "evidence": "feat: add .gitignore to .codspeed folder on creation by @art049 in CodSpeedHQ/pytest-codspeed#107"
+                },
+                {
+                    "source": "adriencaccia",
+                    "target": "python",
+                    "relationship": "updated version support",
+                    "evidence": "Add 3.14 to the list of supported python versions by @adriencaccia"
+                },
+                {
+                    "source": "not-matthias",
+                    "target": "OIDC token",
+                    "relationship": "implemented",
+                    "evidence": "Switch to OIDC token by @not-matthias"
+                },
+                {
+                    "source": "GuillaumeLagrange",
+                    "target": "pytest-codspeed",
+                    "relationship": "renamed feature",
+                    "evidence": "feat: rename instrumentation to simulation by @GuillaumeLagrange"
+                }
+            ]
+        }
+    },
+    {
+        "source_id": "https://github.com/fastapi/fastapi/pull/15033",
+        "graph_data": {
+            "entities": [
+                {
+                    "name": "strawberry-graphql",
+                    "type": "Technology",
+                    "evidence": "Bumps strawberry-graphql from 0.291.2 to 0.307.1."
+                },
+                {
+                    "name": "pydantic",
+                    "type": "Technology",
+                    "evidence": "This release fixes issues with explicit field definitions in experimental pydantic types"
+                },
+                {
+                    "name": "dependabot",
+                    "type": "Developer",
+                    "evidence": "Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself."
+                },
+                {
+                    "name": "strawberry.Private",
+                    "type": "Feature",
+                    "evidence": "Mark fields as strawberry.Private to hide them from the GraphQL schema"
+                },
+                {
+                    "name": "all_fields=True",
+                    "type": "Feature",
+                    "evidence": "all_fields=True now respects explicit field definitions"
+                },
+                {
+                    "name": "from_pydantic()",
+                    "type": "Feature",
+                    "evidence": "from_pydantic() will automatically populate it from the model"
+                },
+                {
+                    "name": "fastapi",
+                    "type": "Technology",
+                    "evidence": "Source ID: https://github.com/fastapi/fastapi/pull/15033"
+                }
+            ],
+            "relationships": [
+                {
+                    "source": "dependabot",
+                    "relationship": "updates",
+                    "target": "strawberry-graphql",
+                    "evidence": "Bumps strawberry-graphql from 0.291.2 to 0.307.1."
+                },
+                {
+                    "source": "strawberry-graphql",
+                    "relationship": "integrates_with",
+                    "target": "pydantic",
+                    "evidence": "Private fields are auto-populated from pydantic models: When a strawberry.Private field has the same name as a pydantic model field, from_pydantic() will automatically populate it from the model"
+                },
+                {
+                    "source": "strawberry.Private",
+                    "relationship": "hides_from",
+                    "target": "GraphQL schema",
+                    "evidence": "Mark fields as strawberry.Private to hide them from the GraphQL schema"
+                },
+                {
+                    "source": "all_fields=True",
+                    "relationship": "affects",
+                    "target": "strawberry-graphql",
+                    "evidence": "Previously, using all_fields=True would override any explicitly defined fields in the strawberry type. Now, explicit definitions take precedence"
+                },
+                {
+                    "source": "strawberry-graphql",
+                    "relationship": "is_dependency_of",
+                    "target": "fastapi",
+                    "evidence": "Source ID: https://github.com/fastapi/fastapi/pull/15033"
+                }
+            ]
+        }
+    },
+    {
+        "source_id": "https://github.com/fastapi/fastapi/pull/15032",
+        "graph_data": {
+            "entities": [
+                {
+                    "name": "fastapi/fastapi",
+                    "type": "Repository",
+                    "evidence": "Source ID: https://github.com/fastapi/fastapi/pull/15032"
+                },
+                {
+                    "name": "typer",
+                    "type": "Technology",
+                    "evidence": "Bumps [typer](https://github.com/fastapi/typer) from 0.21.1 to 0.24.1."
+                },
+                {
+                    "name": "tiangolo",
+                    "type": "Developer",
+                    "evidence": "PR #1569 by @tiangolo."
+                },
+                {
+                    "name": "dependabot[bot]",
+                    "type": "Developer",
+                    "evidence": "PR #1565 by @dependabot[bot]."
+                },
+                {
+                    "name": "bckohan",
+                    "type": "Developer",
+                    "evidence": "PR #1539 by @bckohan."
+                },
+                {
+                    "name": "svlandeg",
+                    "type": "Developer",
+                    "evidence": "PR #1538 by @svlandeg."
+                },
+                {
+                    "name": "SwaatiR",
+                    "type": "Developer",
+                    "evidence": "PR #1542 by @SwaatiR."
+                },
+                {
+                    "name": "YuriiMotov",
+                    "type": "Developer",
+                    "evidence": "PR #1526 by @YuriiMotov."
+                },
+                {
+                    "name": "Python 3.9",
+                    "type": "Technology",
+                    "evidence": "Drop support for Python 3.9."
+                },
+                {
+                    "name": "Python 3.10",
+                    "type": "Technology",
+                    "evidence": "Upgrade types for Python 3.10."
+                },
+                {
+                    "name": "TYPER_USE_RICH parsing",
+                    "type": "Bug",
+                    "evidence": "Fix TYPER_USE_RICH parsing to allow disabling Rich completely."
+                },
+                {
+                    "name": "rich",
+                    "type": "Technology",
+                    "evidence": "Bump rich from 14.3.2 to 14.3.3."
+                },
+                {
+                    "name": "pydantic-settings",
+                    "type": "Technology",
+                    "evidence": "Bump pydantic-settings from 2.13.0 to 2.13.1."
+                },
+                {
+                    "name": "uv",
+                    "type": "Technology",
+                    "evidence": "Run tests with lower bound uv sync"
+                }
+            ],
+            "relationships": [
+                {
+                    "subject": "fastapi/fastapi",
+                    "predicate": "updates dependency",
+                    "object": "typer",
+                    "evidence": "Bumps [typer](https://github.com/fastapi/typer) from 0.21.1 to 0.24.1."
+                },
+                {
+                    "subject": "tiangolo",
+                    "predicate": "fixed CI for",
+                    "object": "typer",
+                    "evidence": "Fix CI, do not attempt to build typer-slim, nor typer-cli. PR #1569 by @tiangolo."
+                },
+                {
+                    "subject": "tiangolo",
+                    "predicate": "removed support for",
+                    "object": "Python 3.9",
+                    "evidence": "Drop support for Python 3.9. PR #1546 by @tiangolo."
+                },
+                {
+                    "subject": "tiangolo",
+                    "predicate": "upgraded types for",
+                    "object": "Python 3.10",
+                    "evidence": "Upgrade types for Python 3.10. PR #1549 by @tiangolo."
+                },
+                {
+                    "subject": "bckohan",
+                    "predicate": "fixed bug in",
+                    "object": "TYPER_USE_RICH parsing",
+                    "evidence": "Fix TYPER_USE_RICH parsing to allow disabling Rich completely. PR #1539 by @bckohan."
+                },
+                {
+                    "subject": "dependabot[bot]",
+                    "predicate": "bumped version of",
+                    "object": "rich",
+                    "evidence": "Bump rich from 14.3.2 to 14.3.3. PR #1565 by @dependabot[bot]."
+                },
+                {
+                    "subject": "dependabot[bot]",
+                    "predicate": "bumped version of",
+                    "object": "pydantic-settings",
+                    "evidence": "Bump pydantic-settings from 2.13.0 to 2.13.1. PR #1566 by @dependabot[bot]."
+                },
+                {
+                    "subject": "svlandeg",
+                    "predicate": "updated documentation for",
+                    "object": "typer",
+                    "evidence": "Remove documentation pages that reference using Click directly. PR #1538 by @svlandeg."
+                },
+                {
+                    "subject": "SwaatiR",
+                    "predicate": "implemented monkeypatch for",
+                    "object": "pytest",
+                    "evidence": "Monkeypatch console width to allow running pytest directly. PR #1542 by @SwaatiR."
+                },
+                {
+                    "subject": "YuriiMotov",
+                    "predicate": "updated test environment using",
+                    "object": "uv",
+                    "evidence": "Run tests with lower bound uv sync, update minimum dependencies. PR #1526 by @YuriiMotov."
+                }
+            ]
+        }
+    },
+    {
+        "source_id": "https://github.com/fastapi/fastapi/pull/15020",
+        "graph_data": {
+            "entities": [
+                {
+                    "name": "actions/download-artifact",
+                    "type": "Technology",
+                    "evidence": "Bumps [actions/download-artifact](https://github.com/actions/download-artifact) from 7 to 8."
+                },
+                {
+                    "name": "@danwkennedy",
+                    "type": "Developer",
+                    "evidence": "by @danwkennedy in actions/download-artifact#460"
+                },
+                {
+                    "name": "Direct downloads",
+                    "type": "Feature",
+                    "evidence": "Direct downloads. To support direct uploads in actions/upload-artifact, the action will no longer attempt to unzip all downloaded files."
+                },
+                {
+                    "name": "Enforced checks",
+                    "type": "Feature",
+                    "evidence": "Enforced checks (breaking). A previous release introduced digest checks on the download."
+                },
+                {
+                    "name": "ESM",
+                    "type": "Technology",
+                    "evidence": "To support new versions of the @actions/* packages, we've upgraded the package to ESM."
+                },
+                {
+                    "name": "Dependabot",
+                    "type": "Developer",
+                    "evidence": "Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself."
+                },
+                {
+                    "name": "skip-decompress",
+                    "type": "Feature",
+                    "evidence": "Callers wishing to download a zipped file as-is can also set the new skip-decompress parameter to false."
+                },
+                {
+                    "name": "digest-mismatch",
+                    "type": "Feature",
+                    "evidence": "Callers can now configure the behavior on mismatch with the digest-mismatch parameter."
+                }
+            ],
+            "relationships": [
+                {
+                    "source": "actions/download-artifact",
+                    "target": "v8",
+                    "relation": "upgraded_to",
+                    "evidence": "Bumps actions/download-artifact from 7 to 8."
+                },
+                {
+                    "source": "@danwkennedy",
+                    "target": "Direct downloads",
+                    "relation": "implemented",
+                    "evidence": "Don't attempt to un-zip non-zipped downloads by @danwkennedy"
+                },
+                {
+                    "source": "@danwkennedy",
+                    "target": "Enforced checks",
+                    "relation": "implemented",
+                    "evidence": "Add a setting to specify what to do on hash mismatch and default it to error by @danwkennedy"
+                },
+                {
+                    "source": "actions/download-artifact",
+                    "target": "ESM",
+                    "relation": "upgraded_to_standard",
+                    "evidence": "we've upgraded the package to ESM."
+                },
+                {
+                    "source": "Direct downloads",
+                    "target": "skip-decompress",
+                    "relation": "includes_parameter",
+                    "evidence": "Callers wishing to download a zipped file as-is can also set the new skip-decompress parameter"
+                },
+                {
+                    "source": "Enforced checks",
+                    "target": "digest-mismatch",
+                    "relation": "includes_parameter",
+                    "evidence": "Callers can now configure the behavior on mismatch with the digest-mismatch parameter."
+                },
+                {
+                    "source": "Dependabot",
+                    "target": "actions/download-artifact",
+                    "relation": "manages_dependency",
+                    "evidence": "Dependabot will resolve any conflicts with this PR"
+                }
+            ]
+        }
+    },
+    {
+        "source_id": "https://github.com/fastapi/fastapi/pull/15019",
+        "graph_data": {
+            "entities": [
+                {
+                    "name": "actions/upload-artifact",
+                    "type": "Technology",
+                    "evidence": "Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 6 to 7."
+                },
+                {
+                    "name": "danwkennedy",
+                    "type": "Developer",
+                    "evidence": "Upgrade the module to ESM and bump dependencies by @danwkennedy"
+                },
+                {
+                    "name": "Link-",
+                    "type": "Developer",
+                    "evidence": "Add proxy integration test by @Link-"
+                },
+                {
+                    "name": "dependabot",
+                    "type": "Developer",
+                    "evidence": "Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself."
+                },
+                {
+                    "name": "Direct Uploads",
+                    "type": "Feature",
+                    "evidence": "Adds support for uploading single files directly (unzipped)."
+                },
+                {
+                    "name": "ESM",
+                    "type": "Technology",
+                    "evidence": "we've upgraded the package to ESM"
+                },
+                {
+                    "name": "proxy integration test",
+                    "type": "Feature",
+                    "evidence": "Add proxy integration test by @Link-"
+                }
+            ],
+            "relationships": [
+                {
+                    "source": "danwkennedy",
+                    "target": "ESM",
+                    "relationship": "upgraded to",
+                    "evidence": "Upgrade the module to ESM and bump dependencies by @danwkennedy"
+                },
+                {
+                    "source": "danwkennedy",
+                    "target": "Direct Uploads",
+                    "relationship": "implemented",
+                    "evidence": "Support direct file uploads by @danwkennedy"
+                },
+                {
+                    "source": "Link-",
+                    "target": "proxy integration test",
+                    "relationship": "implemented",
+                    "evidence": "Add proxy integration test by @Link-"
+                },
+                {
+                    "source": "dependabot",
+                    "target": "actions/upload-artifact",
+                    "relationship": "updates version of",
+                    "evidence": "Bumps actions/upload-artifact from 6 to 7"
+                }
+            ]
+        }
+    },
+    {
+        "source_id": "https://github.com/fastapi/fastapi/pull/15041",
+        "graph_data": {
+            "entities": [
+                {
+                    "id": "Takrim-ScrubAI",
+                    "type": "Developer",
+                    "evidence": "https://github.com/Takrim-ScrubAI/fastapi/blob/fix/oauth2-lazy-initialize-3317/fastapi/security/oauth2.py"
+                },
+                {
+                    "id": "Issue 3317",
+                    "type": "Bug",
+                    "evidence": "Fixes https://github.com/fastapi/fastapi/issues/3317"
+                },
+                {
+                    "id": "Lazy initialization support",
+                    "type": "Feature",
+                    "evidence": "Adds lazy initialization support for OAuth2 security dependencies"
+                },
+                {
+                    "id": "OAuth2PasswordBearer",
+                    "type": "Technology",
+                    "evidence": "OAuth2PasswordBearer now supports deferred configuration"
+                },
+                {
+                    "id": "OAuth2AuthorizationCodeBearer",
+                    "type": "Technology",
+                    "evidence": "OAuth2AuthorizationCodeBearer now supports deferred configuration"
+                },
+                {
+                    "id": "app-factory patterns",
+                    "type": "Technology",
+                    "evidence": "used with app-factory patterns"
+                },
+                {
+                    "id": "Python 3.13",
+                    "type": "Technology",
+                    "evidence": "Validation run on Python 3.13"
+                }
+            ],
+            "relationships": [
+                {
+                    "source": "Takrim-ScrubAI",
+                    "target": "Lazy initialization support",
+                    "relationship": "implemented",
+                    "evidence": "https://github.com/Takrim-ScrubAI/fastapi/blob/fix/oauth2-lazy-initialize-3317/fastapi/security/oauth2.py"
+                },
+                {
+                    "source": "Lazy initialization support",
+                    "target": "Issue 3317",
+                    "relationship": "fixes",
+                    "evidence": "Fixes https://github.com/fastapi/fastapi/issues/3317"
+                },
+                {
+                    "source": "Lazy initialization support",
+                    "target": "OAuth2PasswordBearer",
+                    "relationship": "updates",
+                    "evidence": "OAuth2PasswordBearer now supports deferred configuration with: initialize(tokenUrl=..., refreshUrl=..., scopes=...)"
+                },
+                {
+                    "source": "Lazy initialization support",
+                    "target": "OAuth2AuthorizationCodeBearer",
+                    "relationship": "updates",
+                    "evidence": "OAuth2AuthorizationCodeBearer now supports deferred configuration with: initialize(authorizationUrl=..., tokenUrl=..., refreshUrl=..., scopes=...)"
+                },
+                {
+                    "source": "Lazy initialization support",
+                    "target": "app-factory patterns",
+                    "relationship": "supports",
+                    "evidence": "used with app-factory patterns"
+                },
+                {
+                    "source": "Lazy initialization support",
+                    "target": "Python 3.13",
+                    "relationship": "validated_on",
+                    "evidence": "Validation run on Python 3.13"
+                }
+            ]
+        }
+    },
+    {
+        "source_id": "https://github.com/fastapi/fastapi/pull/13803",
+        "graph_data": {
+            "entities": [
+                {
+                    "name": "jsonable_encoder",
+                    "type": "Feature",
+                    "evidence": "Updated the jsonable_encoder function to correctly handle any iterable type."
+                },
+                {
+                    "name": "sqlalchemy.engine.Row",
+                    "type": "Technology",
+                    "evidence": "serialize objects like sqlalchemy.engine.Row"
+                },
+                {
+                    "name": "collections.abc.Sequence",
+                    "type": "Technology",
+                    "evidence": "which inherit from collections.abc.Sequence"
+                },
+                {
+                    "name": "#30",
+                    "type": "Bug",
+                    "evidence": "The previous contribution at #30 did not (fully) serialize objects like sqlalchemy.engine.Row"
+                },
+                {
+                    "name": "fastapi",
+                    "type": "Technology",
+                    "evidence": "https://github.com/fastapi/fastapi/pull/13803"
+                }
+            ],
+            "relationships": [
+                {
+                    "source": "jsonable_encoder",
+                    "relation": "updated_to_handle",
+                    "target": "iterable type",
+                    "evidence": "Updated the jsonable_encoder function to correctly handle any iterable type."
+                },
+                {
+                    "source": "sqlalchemy.engine.Row",
+                    "relation": "inherits_from",
+                    "target": "collections.abc.Sequence",
+                    "evidence": "sqlalchemy.engine.Row, which inherit from collections.abc.Sequence"
+                },
+                {
+                    "source": "jsonable_encoder",
+                    "relation": "addresses_failures_in",
+                    "target": "#30",
+                    "evidence": "The previous contribution at #30 did not (fully) serialize objects like sqlalchemy.engine.Row ... This led to unexpected failures or incorrect encoding."
+                },
+                {
+                    "source": "jsonable_encoder",
+                    "relation": "belongs_to",
+                    "target": "fastapi",
+                    "evidence": "https://github.com/fastapi/fastapi/pull/13803"
+                }
+            ]
+        }
+    },
+    {
+        "source_id": "https://github.com/fastapi/fastapi/pull/15025",
+        "graph_data": {
+            "entities": [
+                {
+                    "id": "fastapi/fastapi",
+                    "type": "Technology",
+                    "evidence": "Source ID: https://github.com/fastapi/fastapi/pull/15025"
+                },
+                {
+                    "id": "duplicated word typo",
+                    "type": "Bug",
+                    "evidence": "fix a duplicated word in an English release notes entry (`for for` -> `for`)"
+                },
+                {
+                    "id": "release notes",
+                    "type": "Technology",
+                    "evidence": "English release notes entry"
+                },
+                {
+                    "id": "docs/en/docs/**",
+                    "type": "Technology",
+                    "evidence": "docs-only change under `docs/en/docs/**`"
+                },
+                {
+                    "id": "PR 15025",
+                    "type": "Feature",
+                    "evidence": "Title: docs: fix duplicated word in release notes entry"
+                }
+            ],
+            "relationships": [
+                {
+                    "source": "PR 15025",
+                    "target": "duplicated word typo",
+                    "relationship": "fixes",
+                    "evidence": "fix a duplicated word in an English release notes entry (`for for` -> `for`)"
+                },
+                {
+                    "source": "PR 15025",
+                    "target": "release notes",
+                    "relationship": "updates",
+                    "evidence": "fix a duplicated word in an English release notes entry"
+                },
+                {
+                    "source": "PR 15025",
+                    "target": "docs/en/docs/**",
+                    "relationship": "modifies",
+                    "evidence": "docs-only change under `docs/en/docs/**`"
+                },
+                {
+                    "source": "PR 15025",
+                    "target": "fastapi/fastapi",
+                    "relationship": "contributes_to",
+                    "evidence": "Source ID: https://github.com/fastapi/fastapi/pull/15025"
+                }
+            ]
+        }
+    },
+    {
+        "source_id": "https://github.com/fastapi/fastapi/pull/10589",
+        "graph_data": {
+            "entities": [
+                {
+                    "id": "jvllmr",
+                    "type": "Developer",
+                    "evidence": "https://github.com/jvllmr/fastapi-deferred-init"
+                },
+                {
+                    "id": "FastAPI",
+                    "type": "Technology",
+                    "evidence": "In my FastAPI project I have a lot of nested routers."
+                },
+                {
+                    "id": "Slow start-up time",
+                    "type": "Bug",
+                    "evidence": "I soon reached a FastAPI start-up time of 30 seconds or more."
+                },
+                {
+                    "id": "Deferred calculation of router values",
+                    "type": "Feature",
+                    "evidence": "Defer the calculation of values until they are actually needed."
+                },
+                {
+                    "id": "APIRouter",
+                    "type": "Technology",
+                    "evidence": "introducing an argument to the APIRouter"
+                },
+                {
+                    "id": "APIRoute",
+                    "type": "Technology",
+                    "evidence": "and APIRoute which decides if values are deferred or not"
+                }
+            ],
+            "relationships": [
+                {
+                    "source": "jvllmr",
+                    "target": "Deferred calculation of router values",
+                    "relation": "proposes",
+                    "evidence": "This pull request is my proposal to integrate this performance optimization into FastAPI"
+                },
+                {
+                    "source": "Deferred calculation of router values",
+                    "target": "Slow start-up time",
+                    "relation": "resolves",
+                    "evidence": "By doing that the start-up time was shortened significantly."
+                },
+                {
+                    "source": "Slow start-up time",
+                    "target": "FastAPI",
+                    "relation": "affects",
+                    "evidence": "Because the amount of nested routers I soon reached a FastAPI start-up time of 30 seconds or more."
+                },
+                {
+                    "source": "Deferred calculation of router values",
+                    "target": "APIRouter",
+                    "relation": "modifies",
+                    "evidence": "introducing an argument to the APIRouter ... which decides if values are deferred or not"
+                },
+                {
+                    "source": "Deferred calculation of router values",
+                    "target": "APIRoute",
+                    "relation": "modifies",
+                    "evidence": "introducing an argument to the ... APIRoute which decides if values are deferred or not"
+                },
+                {
+                    "source": "jvllmr",
+                    "target": "Slow start-up time",
+                    "relation": "discovered",
+                    "evidence": "I soon reached a FastAPI start-up time of 30 seconds or more. This hurt my developer experience a lot and I soon began digging in to why FastAPI takes so long to load."
+                }
+            ]
+        }
+    },
+    {
+        "source_id": "https://github.com/fastapi/fastapi/pull/15038",
+        "graph_data": {
+            "entities": [
+                {
+                    "name": "@graingert",
+                    "type": "Developer",
+                    "evidence": "Discovered by extrapolating insights by @graingert while discussing another comparable external use case."
+                },
+                {
+                    "name": "Yielding from a TaskGroup",
+                    "type": "Bug",
+                    "evidence": "Fix, avoid yield from a TaskGroup"
+                },
+                {
+                    "name": "TaskGroup",
+                    "type": "Technology",
+                    "evidence": "avoid yield from a TaskGroup"
+                },
+                {
+                    "name": "Async Context Manager",
+                    "type": "Technology",
+                    "evidence": "only as an async context manager"
+                },
+                {
+                    "name": "PEP-0789",
+                    "type": "Technology",
+                    "evidence": "Ref: https://peps.python.org/pep-0789/"
+                },
+                {
+                    "name": "Request Async Exit Stack",
+                    "type": "Feature",
+                    "evidence": "closed in the request async exit stack"
+                }
+            ],
+            "relationships": [
+                {
+                    "source": "@graingert",
+                    "target": "Yielding from a TaskGroup",
+                    "type": "provided_insights_for_discovery",
+                    "evidence": "Discovered by extrapolating insights by @graingert"
+                },
+                {
+                    "source": "Yielding from a TaskGroup",
+                    "target": "TaskGroup",
+                    "type": "misuse_of",
+                    "evidence": "avoid yield from a TaskGroup"
+                },
+                {
+                    "source": "Yielding from a TaskGroup",
+                    "target": "Async Context Manager",
+                    "type": "replaced_by",
+                    "evidence": "only as an async context manager"
+                },
+                {
+                    "source": "Yielding from a TaskGroup",
+                    "target": "PEP-0789",
+                    "type": "related_to",
+                    "evidence": "Ref: https://peps.python.org/pep-0789/"
+                },
+                {
+                    "source": "Async Context Manager",
+                    "target": "Request Async Exit Stack",
+                    "type": "managed_in",
+                    "evidence": "only as an async context manager, closed in the request async exit stack"
+                }
+            ]
+        }
+    }
+]

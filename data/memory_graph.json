@@ -1,0 +1,1648 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14942",
+                    "quote": ""
+                }
+            ],
+            "id": "openapi schema"
+        },
+        {
+            "type": "Bug",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14942",
+                    "quote": ""
+                }
+            ],
+            "id": "annotated metadata loss"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14942",
+                    "quote": ""
+                }
+            ],
+            "id": "annotated"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14942",
+                    "quote": ""
+                }
+            ],
+            "id": "lenient_issubclass"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14942",
+                    "quote": ""
+                }
+            ],
+            "id": "basemodel"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14942",
+                    "quote": ""
+                }
+            ],
+            "id": "enums"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14942",
+                    "quote": ""
+                }
+            ],
+            "id": "iso4217"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14942",
+                    "quote": ""
+                }
+            ],
+            "id": "withjsonschema"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14942",
+                    "quote": ""
+                },
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14829",
+                    "quote": ""
+                },
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15040",
+                    "quote": ""
+                },
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15033",
+                    "quote": ""
+                }
+            ],
+            "id": "pydantic"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14942",
+                    "quote": ""
+                }
+            ],
+            "id": "__get_pydantic_json_schema__"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14829",
+                    "quote": ""
+                }
+            ],
+            "id": "add tests for nullable parameters and defaults"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14829",
+                    "quote": ""
+                },
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15008",
+                    "quote": ""
+                },
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14948",
+                    "quote": ""
+                },
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15043",
+                    "quote": ""
+                },
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15040",
+                    "quote": ""
+                },
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15026",
+                    "quote": ""
+                },
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15033",
+                    "quote": ""
+                },
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/13803",
+                    "quote": ""
+                }
+            ],
+            "id": "fastapi"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14829",
+                    "quote": ""
+                },
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15040",
+                    "quote": ""
+                }
+            ],
+            "id": "openapi"
+        },
+        {
+            "type": "Bug",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14829",
+                    "quote": ""
+                }
+            ],
+            "id": "behavior mismatch between pydantic models and non-model parameters"
+        },
+        {
+            "type": "Bug",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14829",
+                    "quote": ""
+                }
+            ],
+            "id": "none default value not reflected in schema"
+        },
+        {
+            "type": "Bug",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14829",
+                    "quote": ""
+                }
+            ],
+            "id": "file parameter attributeerror with default value"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14829",
+                    "quote": ""
+                }
+            ],
+            "id": "query parameter"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14829",
+                    "quote": ""
+                }
+            ],
+            "id": "form parameter"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14829",
+                    "quote": ""
+                }
+            ],
+            "id": "body parameter"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14829",
+                    "quote": ""
+                }
+            ],
+            "id": "header parameter"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14829",
+                    "quote": ""
+                }
+            ],
+            "id": "beforevalidator"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15008",
+                    "quote": ""
+                }
+            ],
+            "id": "fastapi vs code extension"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15008",
+                    "quote": ""
+                }
+            ],
+            "id": "documentation"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/12481",
+                    "quote": ""
+                }
+            ],
+            "id": "pydantic models"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/12481",
+                    "quote": ""
+                }
+            ],
+            "id": "openapi spec"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/12481",
+                    "quote": ""
+                }
+            ],
+            "id": "query"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/12481",
+                    "quote": ""
+                }
+            ],
+            "id": "cookie"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/12481",
+                    "quote": ""
+                }
+            ],
+            "id": "header"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/12481",
+                    "quote": ""
+                }
+            ],
+            "id": "support for mixed and multiple pydantic models"
+        },
+        {
+            "type": "Issue",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/12481",
+                    "quote": ""
+                }
+            ],
+            "id": "#12199"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14948",
+                    "quote": ""
+                }
+            ],
+            "id": "werkzeug"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14948",
+                    "quote": ""
+                },
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15033",
+                    "quote": ""
+                },
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15020",
+                    "quote": ""
+                },
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15019",
+                    "quote": ""
+                }
+            ],
+            "id": "dependabot"
+        },
+        {
+            "type": "Bug",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14948",
+                    "quote": ""
+                }
+            ],
+            "id": "ghsa-29vq-49wr-vm6x"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14948",
+                    "quote": ""
+                },
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15034",
+                    "quote": ""
+                },
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15032",
+                    "quote": ""
+                }
+            ],
+            "id": "uv"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/14948",
+                    "quote": ""
+                }
+            ],
+            "id": "safe_join"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15043",
+                    "quote": ""
+                }
+            ],
+            "id": "route level middleware"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15040",
+                    "quote": ""
+                }
+            ],
+            "id": "jsonl"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15040",
+                    "quote": ""
+                }
+            ],
+            "id": "sse"
+        },
+        {
+            "type": "Bug",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15040",
+                    "quote": ""
+                }
+            ],
+            "id": "model inference errors"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15040",
+                    "quote": ""
+                }
+            ],
+            "id": "pr 15040"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15040",
+                    "quote": ""
+                }
+            ],
+            "id": "mixed unions"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15040",
+                    "quote": ""
+                }
+            ],
+            "id": "response subclasses in return annotations"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15026",
+                    "quote": ""
+                }
+            ],
+            "id": "pull request #15026"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15026",
+                    "quote": ""
+                }
+            ],
+            "id": "response_model"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15026",
+                    "quote": ""
+                }
+            ],
+            "id": "optional[nonpydanticmodel]"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15026",
+                    "quote": ""
+                }
+            ],
+            "id": "dict[str, nonpydanticmodel]"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15035",
+                    "quote": ""
+                }
+            ],
+            "id": "pydantic-ai"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15035",
+                    "quote": ""
+                }
+            ],
+            "id": "majdalsado"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15035",
+                    "quote": ""
+                }
+            ],
+            "id": "drxd1000"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15035",
+                    "quote": ""
+                }
+            ],
+            "id": "jerry-reevo"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15035",
+                    "quote": ""
+                }
+            ],
+            "id": "douwem"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15035",
+                    "quote": ""
+                }
+            ],
+            "id": "darthjuri"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15035",
+                    "quote": ""
+                }
+            ],
+            "id": "vimota"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15035",
+                    "quote": ""
+                }
+            ],
+            "id": "atharvajaiswal005"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15035",
+                    "quote": ""
+                }
+            ],
+            "id": "sksvineeth"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15035",
+                    "quote": ""
+                }
+            ],
+            "id": "yipstar"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15035",
+                    "quote": ""
+                }
+            ],
+            "id": "madanlalit"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15035",
+                    "quote": ""
+                }
+            ],
+            "id": "gemini 3.1 pro"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15035",
+                    "quote": ""
+                }
+            ],
+            "id": "cohere"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15035",
+                    "quote": ""
+                }
+            ],
+            "id": "anthropic"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15035",
+                    "quote": ""
+                }
+            ],
+            "id": "pydantic-evals"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15035",
+                    "quote": ""
+                }
+            ],
+            "id": "openai"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15034",
+                    "quote": ""
+                }
+            ],
+            "id": "pytest-codspeed"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15034",
+                    "quote": ""
+                }
+            ],
+            "id": "python"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15034",
+                    "quote": ""
+                }
+            ],
+            "id": "edgarrmondragon"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15034",
+                    "quote": ""
+                }
+            ],
+            "id": "adriencaccia"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15034",
+                    "quote": ""
+                }
+            ],
+            "id": "guillaumelagrange"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15034",
+                    "quote": ""
+                }
+            ],
+            "id": "not-matthias"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15034",
+                    "quote": ""
+                }
+            ],
+            "id": "art049"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15034",
+                    "quote": ""
+                }
+            ],
+            "id": "memory profiling"
+        },
+        {
+            "type": "Bug",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15034",
+                    "quote": ""
+                }
+            ],
+            "id": "walltime crashes"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15034",
+                    "quote": ""
+                }
+            ],
+            "id": "oidc token"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15033",
+                    "quote": ""
+                }
+            ],
+            "id": "strawberry-graphql"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15033",
+                    "quote": ""
+                }
+            ],
+            "id": "strawberry.private"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15033",
+                    "quote": ""
+                }
+            ],
+            "id": "all_fields=true"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15033",
+                    "quote": ""
+                }
+            ],
+            "id": "from_pydantic()"
+        },
+        {
+            "type": "Repository",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15032",
+                    "quote": ""
+                }
+            ],
+            "id": "fastapi/fastapi"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15032",
+                    "quote": ""
+                }
+            ],
+            "id": "typer"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15032",
+                    "quote": ""
+                }
+            ],
+            "id": "tiangolo"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15032",
+                    "quote": ""
+                }
+            ],
+            "id": "dependabot[bot]"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15032",
+                    "quote": ""
+                }
+            ],
+            "id": "bckohan"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15032",
+                    "quote": ""
+                }
+            ],
+            "id": "svlandeg"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15032",
+                    "quote": ""
+                }
+            ],
+            "id": "swaatir"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15032",
+                    "quote": ""
+                }
+            ],
+            "id": "yuriimotov"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15032",
+                    "quote": ""
+                }
+            ],
+            "id": "python 3.9"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15032",
+                    "quote": ""
+                }
+            ],
+            "id": "python 3.10"
+        },
+        {
+            "type": "Bug",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15032",
+                    "quote": ""
+                }
+            ],
+            "id": "typer_use_rich parsing"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15032",
+                    "quote": ""
+                }
+            ],
+            "id": "rich"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15032",
+                    "quote": ""
+                }
+            ],
+            "id": "pydantic-settings"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15020",
+                    "quote": ""
+                }
+            ],
+            "id": "actions/download-artifact"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15020",
+                    "quote": ""
+                }
+            ],
+            "id": "@danwkennedy"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15020",
+                    "quote": ""
+                }
+            ],
+            "id": "direct downloads"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15020",
+                    "quote": ""
+                }
+            ],
+            "id": "enforced checks"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15020",
+                    "quote": ""
+                },
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15019",
+                    "quote": ""
+                }
+            ],
+            "id": "esm"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15020",
+                    "quote": ""
+                }
+            ],
+            "id": "skip-decompress"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15020",
+                    "quote": ""
+                }
+            ],
+            "id": "digest-mismatch"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15019",
+                    "quote": ""
+                }
+            ],
+            "id": "actions/upload-artifact"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15019",
+                    "quote": ""
+                }
+            ],
+            "id": "danwkennedy"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15019",
+                    "quote": ""
+                }
+            ],
+            "id": "link-"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15019",
+                    "quote": ""
+                }
+            ],
+            "id": "direct uploads"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15019",
+                    "quote": ""
+                }
+            ],
+            "id": "proxy integration test"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/13803",
+                    "quote": ""
+                }
+            ],
+            "id": "jsonable_encoder"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/13803",
+                    "quote": ""
+                }
+            ],
+            "id": "sqlalchemy.engine.row"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/13803",
+                    "quote": ""
+                }
+            ],
+            "id": "collections.abc.sequence"
+        },
+        {
+            "type": "Bug",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/13803",
+                    "quote": ""
+                }
+            ],
+            "id": "#30"
+        },
+        {
+            "type": "Developer",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15038",
+                    "quote": ""
+                }
+            ],
+            "id": "@graingert"
+        },
+        {
+            "type": "Bug",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15038",
+                    "quote": ""
+                }
+            ],
+            "id": "yielding from a taskgroup"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15038",
+                    "quote": ""
+                }
+            ],
+            "id": "taskgroup"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15038",
+                    "quote": ""
+                }
+            ],
+            "id": "async context manager"
+        },
+        {
+            "type": "Technology",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15038",
+                    "quote": ""
+                }
+            ],
+            "id": "pep-0789"
+        },
+        {
+            "type": "Feature",
+            "description": "",
+            "evidence": [
+                {
+                    "source": "https://github.com/fastapi/fastapi/pull/15038",
+                    "quote": ""
+                }
+            ],
+            "id": "request async exit stack"
+        }
+    ],
+    "edges": [
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/14942",
+            "source": "annotated metadata loss",
+            "target": "openapi schema",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/14942",
+            "source": "lenient_issubclass",
+            "target": "basemodel",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/14942",
+            "source": "enums",
+            "target": "iso4217",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/14942",
+            "source": "withjsonschema",
+            "target": "pydantic",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/14942",
+            "source": "withjsonschema",
+            "target": "openapi schema",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15040",
+            "source": "fastapi",
+            "target": "pydantic",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/12481",
+            "source": "pydantic models",
+            "target": "query",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/12481",
+            "source": "pydantic models",
+            "target": "cookie",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/12481",
+            "source": "pydantic models",
+            "target": "header",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/12481",
+            "source": "pydantic models",
+            "target": "openapi spec",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/12481",
+            "source": "support for mixed and multiple pydantic models",
+            "target": "pydantic models",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/12481",
+            "source": "support for mixed and multiple pydantic models",
+            "target": "#12199",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/14948",
+            "source": "werkzeug",
+            "target": "ghsa-29vq-49wr-vm6x",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/14948",
+            "source": "dependabot",
+            "target": "werkzeug",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15033",
+            "source": "dependabot",
+            "target": "strawberry-graphql",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15020",
+            "source": "dependabot",
+            "target": "actions/download-artifact",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15019",
+            "source": "dependabot",
+            "target": "actions/upload-artifact",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/14948",
+            "source": "ghsa-29vq-49wr-vm6x",
+            "target": "safe_join",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/14948",
+            "source": "uv",
+            "target": "fastapi",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15040",
+            "source": "pr 15040",
+            "target": "model inference errors",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15040",
+            "source": "pr 15040",
+            "target": "response subclasses in return annotations",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15040",
+            "source": "pr 15040",
+            "target": "fastapi",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15040",
+            "source": "pr 15040",
+            "target": "openapi",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15040",
+            "source": "pr 15040",
+            "target": "mixed unions",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15034",
+            "source": "edgarrmondragon",
+            "target": "uv",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15034",
+            "source": "adriencaccia",
+            "target": "python",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15034",
+            "source": "guillaumelagrange",
+            "target": "walltime crashes",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15034",
+            "source": "guillaumelagrange",
+            "target": "pytest-codspeed",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15034",
+            "source": "not-matthias",
+            "target": "memory profiling",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15034",
+            "source": "not-matthias",
+            "target": "oidc token",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15034",
+            "source": "art049",
+            "target": "pytest-codspeed",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15033",
+            "source": "strawberry-graphql",
+            "target": "pydantic",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15033",
+            "source": "strawberry-graphql",
+            "target": "fastapi",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15033",
+            "source": "all_fields=true",
+            "target": "strawberry-graphql",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15020",
+            "source": "actions/download-artifact",
+            "target": "esm",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15020",
+            "source": "@danwkennedy",
+            "target": "direct downloads",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15020",
+            "source": "@danwkennedy",
+            "target": "enforced checks",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15020",
+            "source": "direct downloads",
+            "target": "skip-decompress",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15020",
+            "source": "enforced checks",
+            "target": "digest-mismatch",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15019",
+            "source": "danwkennedy",
+            "target": "esm",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15019",
+            "source": "danwkennedy",
+            "target": "direct uploads",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15019",
+            "source": "link-",
+            "target": "proxy integration test",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/13803",
+            "source": "jsonable_encoder",
+            "target": "#30",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/13803",
+            "source": "jsonable_encoder",
+            "target": "fastapi",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/13803",
+            "source": "sqlalchemy.engine.row",
+            "target": "collections.abc.sequence",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15038",
+            "source": "@graingert",
+            "target": "yielding from a taskgroup",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15038",
+            "source": "yielding from a taskgroup",
+            "target": "taskgroup",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15038",
+            "source": "yielding from a taskgroup",
+            "target": "async context manager",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15038",
+            "source": "yielding from a taskgroup",
+            "target": "pep-0789",
+            "key": 0
+        },
+        {
+            "type": "related",
+            "source_id": "https://github.com/fastapi/fastapi/pull/15038",
+            "source": "async context manager",
+            "target": "request async exit stack",
+            "key": 0
+        }
+    ]
+}
