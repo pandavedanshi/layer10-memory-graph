@@ -1,12 +1,6 @@
-notepad .gitignore
-```
-Paste this and save:
-```
 venv/
 .env
 __pycache__/
 *.pyc
-data/
 ui/node_modules/
 ui/build/
-*.json
