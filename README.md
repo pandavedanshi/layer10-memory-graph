@@ -128,13 +128,13 @@ Live at: `https://Vedanshipanda-layer10-ui.hf.space`
 | Service | URL |
 |---------|-----|
 | Backend API | `https://Vedanshipanda-layer10-api.hf.space` |
-| Frontend UI | `https://Vedanshipanda-layer10-ui.hf.space` |
+| Frontend UI | `https://huggingface.co/spaces/Vedanshipanda/layer10-ui` |
 | API Docs | `https://Vedanshipanda-layer10-api.hf.space/docs` |
 
 ---
 
 ## 📊 Graph Stats
 
-- **139 nodes** — Bugs, Developers, Features, Issues, Repositories, Technologies
-- **81 edges** — relationships extracted from GitHub issues via LLM
+- **111 nodes** — Bugs, Developers, Features, Issues, Repositories, Technologies
+- **50 edges** — relationships extracted from GitHub issues via LLM
 - **6 entity types** — color-coded with neon glow in the visualization
