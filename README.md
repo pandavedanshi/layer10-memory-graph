@@ -1,3 +1,13 @@
+---
+title: Layer10 Api
+emoji: 🧠
+colorFrom: blue
+colorTo: cyan
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # 🧠 Layer10 Memory Graph
 
 An organizational knowledge graph built from GitHub issues using LLMs — visualized as an interactive force-directed graph.
@@ -65,10 +75,10 @@ API docs at `http://localhost:8000/docs`
 
 1. Go to [huggingface.co](https://huggingface.co) → New Space
 2. Name: `layer10-api` · SDK: **Docker**
-3. Upload: `Dockerfile`, `src/`, `data/`, `README.md`
+3. Push repo with `Dockerfile`, `src/`, `data/`, `README.md`
 4. Space auto-builds and runs on port 7860
 
-Live at: `https://pandavedanshi-layer10-api.hf.space`
+Live at: `https://Vedanshipanda-layer10-api.hf.space`
 
 ---
 
@@ -109,7 +119,7 @@ npm run build
 ```
 4. Upload everything inside `ui/build/` to the Space
 
-Live at: `https://pandavedanshi-layer10-ui.hf.space`
+Live at: `https://Vedanshipanda-layer10-ui.hf.space`
 
 ---
 
@@ -117,14 +127,14 @@ Live at: `https://pandavedanshi-layer10-ui.hf.space`
 
 | Service | URL |
 |---------|-----|
-| Backend API | `https://pandavedanshi-layer10-api.hf.space` |
-| Frontend UI | `https://pandavedanshi-layer10-ui.hf.space` |
-| API Docs | `https://pandavedanshi-layer10-api.hf.space/docs` |
+| Backend API | `https://Vedanshipanda-layer10-api.hf.space` |
+| Frontend UI | `https://Vedanshipanda-layer10-ui.hf.space` |
+| API Docs | `https://Vedanshipanda-layer10-api.hf.space/docs` |
 
 ---
 
 ## 📊 Graph Stats
 
-- **111 nodes** — Bugs, Developers, Features, Issues, Repositories, Technologies
-- **50 edges** — relationships extracted from GitHub issues via LLM
+- **139 nodes** — Bugs, Developers, Features, Issues, Repositories, Technologies
+- **81 edges** — relationships extracted from GitHub issues via LLM
 - **6 entity types** — color-coded with neon glow in the visualization
