@@ -17,7 +17,7 @@ layer10-memory-graph/
 │   ├── extraction.py       # LLM entity extraction
 │   └── ingestion.py        # Data ingestion
 ├── data/
-│   └── memory_graph.json   # Knowledge graph (111 nodes, 50 edges)
+│   └── memory_graph.json   # Knowledge graph (139 nodes, 81 edges)
 └── ui/                     # React frontend
     ├── src/
     │   ├── App.js
